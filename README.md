@@ -1,4 +1,4 @@
-# Cafeteria API - Backend em C#
+# Cafeteria API 
 
 ## Objetivos
 A Cafeteria API foi projetada para:
