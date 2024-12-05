@@ -1,37 +1,37 @@
-# Cafeteria API 
+# Cafeteria API - Backend em C#
 
-## Objetivos
-A Cafeteria API foi projetada para:
-- Gerenciar pedidos;
-- Gerenciar estoque;
-- Acompanhar vendas.
+## Propósito
+A Cafeteria API foi desenvolvida para:
+- Controlar pedidos realizados pelos clientes;
+- Gerenciar o estoque de produtos;
+- Monitorar as vendas realizadas.
 
-## Estrutura do Projeto
-O projeto utiliza o padrão **MVC (Model-View-Controller)**, com os seguintes componentes:
+## Estrutura do Sistema
+O projeto segue o padrão arquitetural **MVC (Model-View-Controller)**, com a seguinte organização:
 
 ### 1. **Views**
-As *Views* representam a interface onde os usuários interagem. Todas as solicitações realizadas nesta camada são direcionadas aos *Controllers*.
+As *Views* representam a camada de interação com o usuário. Todas as solicitações originadas aqui são direcionadas aos *Controllers* para processamento.
 
-#### Telas disponíveis:
-- **Home**: Tela inicial.
-- **Order**: Tela de pedidos.
-- **Product**: Tela de estoque.
+#### Principais Telas:
+- **Home**: Página inicial do sistema.
+- **Order**: Interface para gerenciamento de pedidos.
+- **Product**: Interface para administração do estoque.
 
 ### 2. **Controllers**
-Os *Controllers* são responsáveis por requisitar ações ou dados dos *Models* e retornar os resultados para as *Views*.
+Os *Controllers* conectam as solicitações das *Views* com os *Models*, requisitando ações ou dados e retornando o resultado apropriado.
 
-#### Controladores disponíveis:
-- **Home**: Gerencia a tela inicial.
-- **Order**: Implementa o CRUD de pedidos.
-- **Product**: Implementa o CRUD de produtos.
+#### Principais Controladores:
+- **Home**: Controlador responsável pela página inicial.
+- **Order**: Gerencia as operações de pedidos (CRUD).
+- **Product**: Controla as operações relacionadas aos produtos (CRUD).
 
 ### 3. **Models**
-Os *Models* interagem com o banco de dados, realizando consultas e inserções. Eles enviam os resultados para os *Controllers*.
+Os *Models* são responsáveis pela interação direta com o banco de dados. Eles realizam operações de consulta e manipulação de dados, retornando as informações para os *Controllers*.
 
-#### Classes disponíveis:
-- **Order**: Representa os pedidos registrados.
-- **Product**: Representa os produtos registrados.
-- **ProductCategory**: Representa as categorias dos produtos.
+#### Principais Classes:
+- **Order**: Representa os pedidos feitos no sistema.
+- **Product**: Representa os itens disponíveis no estoque.
+- **ProductCategory**: Classifica os produtos por categoria.
 
 ## Diagrama de Classes
 ```mermaid
